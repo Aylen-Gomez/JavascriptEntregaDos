@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
  function agregarAlCarrito(producto) {
   carrito.push(producto);
   guardarCarrito();
