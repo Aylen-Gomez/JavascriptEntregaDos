@@ -135,3 +135,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+ function agregarAlCarrito(producto) {
+  carrito.push(producto);
+  guardarCarrito();
+  actualizarCarrito();
+
+
+  const notificacion = document.createElement("div");
+  notificacion.textContent = `${producto.nombre} agregado al carrito`;
+  notificacion.style.position = "fixed";
+  notificacion.style.top = "20px";
+  notificacion.style.right = "20px";
+  notificacion.style.backgroundColor = "#007bff";
+  notificacion.style.color = "#fff";
+  notificacion.style.padding = "10px 20px";
+  notificacion.style.borderRadius = "8px";
+  notificacion.style.boxShadow = "0 4px 6px rgba(0,0,0,0.2)";
+  notificacion.style.zIndex = "1000";
+  document.body.appendChild(notificacion);
+
+  setTimeout(() => {
+    notificacion.remove();
+  }, 2000);
+
+}

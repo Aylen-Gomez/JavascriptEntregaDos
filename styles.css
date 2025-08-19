@@ -204,3 +204,135 @@ body {
   background-color: #ffb26f;
   text-align: center;
 }
+
+#carrito {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#carrito h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #351a03;
+}
+
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #351a03;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+#vaciar-carrito,
+#finalizar-compra {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Vaciar carrito */
+#vaciar-carrito {
+  background-color: #ffb26f;
+  color: #fff;
+}
+#vaciar-carrito:hover {
+  background-color: #ad692d;
+}
+
+/* Finalizar compra */
+#finalizar-compra {
+  background-color: #ffb26f;
+  color: #fff;
+}
+#finalizar-compra:hover {
+  background-color: #ad692d;
+}
+
+
+/*FORMULARIO*/
+
+.contacto {
+  max-width: 500px;      
+  margin: 50px auto;      
+  padding: 20px;
+  background: #f9f9f9;  
+  border-radius: 12px;    
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contacto-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color:  #351a03;
+  font-size: 1.8rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:  #351a03;
+}
+
+.campo input,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #ffb26f;
+}
+
+/* Botón */
+.btn-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #c78c58;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background: #351a03;
+}

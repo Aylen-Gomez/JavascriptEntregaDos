@@ -62,23 +62,34 @@
     </nav>
   </header>
   <main>
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/tu-endpoint" method="POST">
+    <section class="contacto">
+  <h2 class="contacto-titulo">Contacto</h2>
+  <form class="formulario-contacto" action="https://formspree.io/f/tu-endpoint" method="POST">
+    
+    <div class="campo">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required placeholder="Tu nombre">
+    </div>
 
-      <label>Nombre:</label><br>
-      <input type="text" name="nombre" required placeholder="Tu nombre"><br><br>
+    <div class="campo">
+      <label>Correo electrónico:</label>
+      <input type="email" name="email" required placeholder="tucorreo@ejemplo.com">
+    </div>
 
-      <label>Correo electrónico:</label><br>
-      <input type="email" name="email" required placeholder="tucorreo@ejemplo.com"><br><br>
+    <div class="campo">
+      <label>Teléfono:</label>
+      <input type="tel" name="telefono" placeholder="Ej: 11 5555-5555">
+    </div>
 
-      <label>Teléfono:</label><br>
-      <input type="tel" name="telefono" placeholder="Ej: 11 5555-5555"><br><br>
+    <div class="campo">
+      <label>Mensaje:</label>
+      <textarea name="mensaje" rows="5" required placeholder="Escribí tu mensaje aquí..."></textarea>
+    </div>
 
-      <label>Mensaje:</label><br>
-      <textarea name="mensaje" rows="5" required placeholder="Escribí tu mensaje aquí..."></textarea><br><br>
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+</section>
 
-      <button type="submit">Enviar</button>
-    </form>
 
   </main>
   <footer class="footer">
